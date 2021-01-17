@@ -1,7 +1,9 @@
 .App {
     text-align: center;
 }
-
+body{
+  background: linear-gradient( to left,rgb(31, 83, 226) 0%, rgb(9, 224, 224) 100%);
+}
 .red{
   color: red;
 }
