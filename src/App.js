@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Radium, { StyleRoot } from 'radium';
 import './App.css';
 
 import Person from './Components/Person/Person';
@@ -85,19 +84,17 @@ class App extends Component {
       classes.push('bold')
     }
     return (
-      <StyleRoot>
-        <div className="App">
-          <h1>Let's Start</h1>
-          <p className={classes.join(' ')}>This is really working</p>
+      <div className="App">
+        <h1>Let's Start</h1>
+        <p className={classes.join(' ')}>This is really working</p>
 
-          <button
-            style={style}
-            onClick={this.togglePersonHandler}>Toggle list</button>
+        <button
+          style={style}
+          onClick={this.togglePersonHandler}>Toggle list</button>
 
-          {persons}
-        </div>
-      </StyleRoot>
+        {persons}
+      </div>
     );
   }
 }
-export default Radium(App);
+export default App;
