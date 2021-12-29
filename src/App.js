@@ -37,6 +37,7 @@ function App() {
     });
   };
 
+  
   return ( 
     <div >
       <NewExpense onAddExpense={addExpenseHandler}/>
